@@ -158,7 +158,7 @@ async function startBot() {
   try {
     await client.login(TOKEN);
     await registerCommands();
-    //fetchDataAndUpdateJSON();
+    fetchDataAndUpdateJSON();
   } catch (error) {
     console.error("Error starting the bot:", error);
   }

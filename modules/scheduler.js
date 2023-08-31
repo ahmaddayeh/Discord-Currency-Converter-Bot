@@ -11,9 +11,8 @@ console.log("Resolved path:", JSON_FILE_PATH);
 const fetchDataAndUpdateJSON = async () => {
   try {
     const response = await axios.get(
-      "http://data.fixer.io/api/latest?access_key=" + { APIKEY }
+      "http://data.fixer.io/api/latest?access_key=" + APIKEY
     );
-
     const newData = {
       data: response.data,
     };
